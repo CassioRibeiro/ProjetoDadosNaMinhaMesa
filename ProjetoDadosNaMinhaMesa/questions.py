@@ -10,7 +10,7 @@ class questions:                # classe criada e denominada 'questions'.
     def questions_post_pandemic(self):     # def que irá realizar a pesquisa pós pendemia.
         import pandas as pd                     #\
         from datetime import datetime           #/ bibliotecas usadas durante o código.
-        from os import system
+        from os import system                   # biblioteca para dar um clear na tela ao reiniciar a pesquisa
         listaQ = []                             # lista vazia criada para armazenar os dados da pesquisa para posteriormente serem gravdas num arquivo CSV.
         exit = 1
         while exit  != 2:                       # estrutura de repetição onde será coletada os dados de cada entrevistado.
@@ -101,12 +101,12 @@ class questions:                # classe criada e denominada 'questions'.
                 try:                    # tratamento de exceção para evitar erros no código.
                     exit = int(input("\nDeseja iniciar outra pesquisa?\n[1] - SIM\n[2] - NÃO\nSelecione sua opção: "))
                     if exit == 1:      # condicional para continuar a inserir dados de outros entrevistados.
-                        system("cls")
+                        system("cls")   # chamando o comando para dar o clear na tela após o usuário optar por inserir mais dados de outros entrevistados
                         pass           # pass para nada fazer caso seja escolhida essa opção.
                     elif exit == 2:     # condicional que encerra o programa e inicia a transferência dos dados para o arquivo CSV.
                         dflista = pd.DataFrame(listaQ)      # usando o pandas transformamos a lista com os dados em um data frame.
                 
-                        dflista.to_csv("Arquivos_CSV\DadosEntrevistados.csv",  mode = "a" ,index = False, header = False, encoding= "utf-8")   # exportando o data frame criado para nosso arquivo CSV.
+                        dflista.to_csv("DadosEntrevistados.csv",  mode = "a" ,index = False, header = False, encoding= "utf-8")   # exportando o data frame criado para nosso arquivo CSV.
 
                     
                         print("\n##########{:^150}##########\n".format("THE YELLOW SQUAD"))  #print de saudação final com o nome do nosso squad.
