@@ -55,7 +55,7 @@ class questions:                # classe criada e denominada 'questions'.
             q1 = 4
             while q1 >3:        #estrutura de repetição que irá coletar a resposta da primeira pergunta do entrevistado.
                 try:             # tratamento de exceção para evitar erros no código.
-                    q1 = int(input("\nAlgum familiar ou alguém próximo a você veio a óbito devido ao Covid 19?\n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: "))        #variável com menu de opções para o usuário.
+                    q1 = int(input("\nVocê tomou todas as doses da vacina contra o Covid 19? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: "))        #variável com menu de opções para o usuário.
                     if q1 >3:           #condicional para validar a primeira resposta do entrevistado.
                         print("\nOpção inválida\n")         #print para orientar o usuário a inserir uma opção válida.
                 except:
@@ -64,7 +64,7 @@ class questions:                # classe criada e denominada 'questions'.
             q2 =4
             while q2 >3:                         #estrutura de repetição que irá coletar a resposta da segunda pergunta do entrevistado.
                 try:                                        # tratamento de exceção para evitar erros no código.
-                    q2 = int(input("\nVocê tomou todas as doses da vacina contra o Covid 19? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: : "))  #variável com menu de opções para o usuário.
+                    q2 = int(input("\nVocê ainda usa a máscara em locais públicos? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: : "))  #variável com menu de opções para o usuário.
                     if q2 >3:                               #condicional para validar a segunda resposta do entrevistado.
                         print("\nOpção inválida\n")         #print para orientar o usuário a inserir uma opção válida.
                 except:
@@ -73,7 +73,7 @@ class questions:                # classe criada e denominada 'questions'.
             q3 =4
             while q3 >3:                          #estrutura de repetição que irá coletar a resposta da terceira pergunta do entrevistado.
                 try:                                        # tratamento de exceção para evitar erros no código.
-                    q3 = int(input("\nVocê ainda usa a máscara em locais públicos? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: "))       #variável com menu de opções para o usuário.
+                    q3 = int(input("\nVocê ainda faz uso contínuo de alcool para higienização das mãos? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: "))       #variável com menu de opções para o usuário.
                     if q3 >3:                               #condicional para validar a terceira resposta do entrevistado.
                         print("\nOpção inválida\n")         #print para orientar o usuário a inserir uma opção válida.
                 except:
@@ -81,7 +81,7 @@ class questions:                # classe criada e denominada 'questions'.
             q4 =4
             while q4 >3:                          #estrutura de repetição que irá coletar a resposta da quarta pergunta do entrevistado.
                 try:                                        # tratamento de exceção para evitar erros no código.
-                    q4 = int(input("\nE alcool ? ainda faz uso dele ? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: "))        #variável com menu de opções para o usuário.
+                    q4 = int(input("\nVocê perdeu alçguém próximo devido ao Covid 19 ? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: "))        #variável com menu de opções para o usuário.
                     if q4 >3:                               #condicional para validar a quarta resposta do entrevistado.
                         print("\nOpção inválida\n")         #print para orientar o usuário a inserir uma opção válida.
                 except:
