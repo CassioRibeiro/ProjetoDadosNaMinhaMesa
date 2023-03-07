@@ -4,9 +4,13 @@ Projeto em grupo da formação em Análise de Dados Resilia/Senac
 
 O projeto consiste em realizar um script python que os dados coletados são a Idade, Genero, 4 respotas sobre hábitos pós pandemia, data e hora e convertido em um arquivo csv. A forma como isso será feita fica a critério do nosso squad.
 
-## Tecnologias usadas * Python 3.11 🐍 * Canva ## Falando do código... * Dois arquivos foram criados.
+## Tecnologias usadas 
+* Python 3.11 🐍 
+* Canva
 
-Um deles contendo a classe com o método que irá coletar as informações do tema proposto que é Hábitos pós pandemia, no outro o main que irá importar esse arquivo e rodar nosso script.
+## Falando do código...
+
+* Dois arquivos foram criados, um deles contendo a classe com o método que irá coletar as informações do tema proposto que é Hábitos pós pandemia, no outro o main que irá importar esse arquivo e rodar nosso script.
 
 * Bibliotecas foram usadas no projeto e estão no requirements.
 
