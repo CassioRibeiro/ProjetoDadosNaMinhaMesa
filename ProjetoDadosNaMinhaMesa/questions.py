@@ -8,8 +8,8 @@ class questions:                # classe criada e denominada 'questions'.
         pass
 
     def questions_post_pandemic(self):     # def que irá realizar a pesquisa pós pendemia.
-        import pandas as pd                     # biblioteca usada para exportar os dados dos entrevistados num arquivo csv
-        from datetime import datetime           # bibliotecas usada para coletar data e hora em tempo real do sistema
+        import pandas as pd                     #\
+        from datetime import datetime           #/ bibliotecas usadas durante o código.
         from os import system                   # biblioteca para dar um clear na tela ao reiniciar a pesquisa
         from termcolor import colored           # Biblioteca usada para colorir todas nossas strings de amarelo
         listaQ = []                             # lista vazia criada para armazenar os dados da pesquisa para posteriormente serem gravdas num arquivo CSV.
@@ -26,7 +26,9 @@ class questions:                # classe criada e denominada 'questions'.
                 elif idade >150:
                     print(colored("\nIdade inválida\n","yellow"))       #print para orientar o usuário a inserir uma opção válida.
                     continue                            # 'continue' usado para pedir novamente a idade caso ela seja maior de 150.
-
+                elif idade < 15:                        
+                    print(colored("\nIdade inválida. É preciso ser maior de 15 anos para participar da pesquisa\n","yellow"))       #print para orientar o usuário a inserir uma opção válida.
+                    continue
                 
 
             except:
