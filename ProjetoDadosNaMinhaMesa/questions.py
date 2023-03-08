@@ -7,12 +7,12 @@ class questions:                # classe criada e denominada 'questions'.
     def __init__(self):                 #def init sem parâmetro e com o pass para que ele nada faça.
         pass
 
-    def questions_post_pandemic(self):     # def que irá realizar a pesquisa pós pendemia.
+    def questions_post_pandemic(self):     # def que irá realizar a pesquisa pós pandemia.
         import pandas as pd                     #\
         from datetime import datetime           #/ bibliotecas usadas durante o código.
         from os import system                   # biblioteca para dar um clear na tela ao reiniciar a pesquisa
         from termcolor import colored           # Biblioteca usada para colorir todas nossas strings de amarelo
-        listaQ = []                             # lista vazia criada para armazenar os dados da pesquisa para posteriormente serem gravdas num arquivo CSV.
+        listaQ = []                             # lista vazia criada para armazenar os dados da pesquisa para posteriormente serem gravadas num arquivo CSV.
         exit = 1
         while exit  != 2:                       # estrutura de repetição onde será coletada os dados de cada entrevistado.
             print(("\n{:^170}\n").format(colored("PESQUISA HÁBITOS PÓS PANDEMIA", "yellow")))   #print de saudação.
