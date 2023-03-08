@@ -1,8 +1,6 @@
-# ProjetoDadosNaMinhaMesa
+# ProjetoDadosNaMinhaMesa 
 
-### Projeto em grupo da formação em Análise de Dados Resilia/Senac
-
-# ProjetoDadosNaMinhaMesa #### Projeto em grupo da formação em Análise de Dados Resilia/Senac. 
+#### Projeto em grupo da formação em Análise de Dados Resilia/Senac. 
 
 * O projeto consiste em realizar um script python que os dados coletados são a Idade, Genero, 4 respotas sobre hábitos pós pandemia, data e hora e convertido em um arquivo csv. A forma como isso será feita fica a critério do nosso squad.
 
