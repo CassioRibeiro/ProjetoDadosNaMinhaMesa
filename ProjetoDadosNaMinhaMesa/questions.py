@@ -7,12 +7,12 @@ class questions:                # classe criada e denominada 'questions'.
     def __init__(self):                 #def init sem parâmetro e com o pass para que ele nada faça.
         pass
 
-    def questions_post_pandemic(self):     # def que irá realizar a pesquisa pós pandemia.
+    def questions_post_pandemic(self):     # def que irá realizar a pesquisa pós pendemia.
         import pandas as pd                     #\
         from datetime import datetime           #/ bibliotecas usadas durante o código.
         from os import system                   # biblioteca para dar um clear na tela ao reiniciar a pesquisa
         from termcolor import colored           # Biblioteca usada para colorir todas nossas strings de amarelo
-        listaQ = []                             # lista vazia criada para armazenar os dados da pesquisa para posteriormente serem gravadas num arquivo CSV.
+        listaQ = []                             # lista vazia criada para armazenar os dados da pesquisa para posteriormente serem gravdas num arquivo CSV.
         exit = 1
         while exit  != 2:                       # estrutura de repetição onde será coletada os dados de cada entrevistado.
             print(("\n{:^170}\n").format(colored("PESQUISA HÁBITOS PÓS PANDEMIA", "yellow")))   #print de saudação.
@@ -59,7 +59,13 @@ class questions:                # classe criada e denominada 'questions'.
             while q1 >3:        #estrutura de repetição que irá coletar a resposta da primeira pergunta do entrevistado.
                 try:             # tratamento de exceção para evitar erros no código.
                     q1 = int(input(colored("\nVocê tomou todas as doses da vacina contra o Covid 19? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: ", "yellow")))        #variável com menu de opções para o usuário.
-                    if q1 >3:           #condicional para validar a primeira resposta do entrevistado.
+                    if q1 == 1:              #\
+                        R1 = "Sim"            #\
+                    elif q1 == 2:               # Condicionais para guardar as respostas na lista que posteriormente será enviada para um arquivo csv
+                        R1 = "Não"            #/
+                    elif q1 == 3:            #/
+                        R1 = "Não Sei"
+                    elif q1 >3:           #condicional para validar a primeira resposta do entrevistado.
                         print(colored("\nOpção inválida\n","yellow"))        #print para orientar o usuário a inserir uma opção válida.
                 except:
                     print(colored("\nOpção inválida. Favor escolher uma opção conforme menu.\n","yellow"))   # print para orientar.
@@ -68,8 +74,14 @@ class questions:                # classe criada e denominada 'questions'.
             while q2 >3:                         #estrutura de repetição que irá coletar a resposta da segunda pergunta do entrevistado.
                 try:                                        # tratamento de exceção para evitar erros no código.
                     q2 = int(input(colored("\nVocê ainda usa a máscara em locais públicos? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: : ", "yellow")))  #variável com menu de opções para o usuário.
-                    if q2 >3:                               #condicional para validar a segunda resposta do entrevistado.
-                        print(colored("\nOpção inválida\n","yellow"))         #print para orientar o usuário a inserir uma opção válida.
+                    if q2 == 1:                 #\
+                        R2 = "Sim"               #\
+                    elif q2 == 2:                  # Condicionais para guardar as respostas na lista que posteriormente será enviada para um arquivo csv
+                        R2 = "Não"               #/
+                    elif q2 == 3:               #/
+                        R2 = "Não Sei"
+                    elif q2 >3:           #condicional para validar a primeira resposta do entrevistado.
+                        print(colored("\nOpção inválida\n","yellow"))        #print para orientar o usuário a inserir uma opção válida.
                 except:
                     print(colored("\nOpção inválida. Favor escolher uma opção conforme menu.\n","yellow"))          #print para orientar o usuário a inserir uma opção válida.
             
@@ -77,16 +89,28 @@ class questions:                # classe criada e denominada 'questions'.
             while q3 >3:                          #estrutura de repetição que irá coletar a resposta da terceira pergunta do entrevistado.
                 try:                                        # tratamento de exceção para evitar erros no código.
                     q3 = int(input(colored("\nVocê ainda faz uso contínuo de alcool para higienização das mãos? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: ", "yellow")))     #variável com menu de opções para o usuário.
-                    if q3 >3:                               #condicional para validar a terceira resposta do entrevistado.
-                        print(colored("\nOpção inválida\n","yellow"))         #print para orientar o usuário a inserir uma opção válida.
+                    if q3 == 1:                 #\
+                        R3 = "Sim"                #\
+                    elif q3 == 2:                   # Condicionais para guardar as respostas na lista que posteriormente será enviada para um arquivo csv
+                        R3 = "Não"                #/
+                    elif q3 == 3:               #/
+                        R3 = "Não Sei"
+                    elif q3 >3:           #condicional para validar a primeira resposta do entrevistado.
+                        print(colored("\nOpção inválida\n","yellow"))        #print para orientar o usuário a inserir uma opção válida.
                 except:
                     print(colored("\nOpção inválida. Favor escolher uma opção conforme menu.\n","yellow"))            #print para orientar o usuário a inserir uma opção válida.
             q4 =4
             while q4 >3:                          #estrutura de repetição que irá coletar a resposta da quarta pergunta do entrevistado.
                 try:                                        # tratamento de exceção para evitar erros no código.
                     q4 = int(input(colored("\nVocê perdeu alçguém próximo devido ao Covid 19 ? \n[1] - SIM\n[2] - NÃO\n[3] - NÃO SEI\nSelecione sua resposta: ", "yellow")))        #variável com menu de opções para o usuário.
-                    if q4 >3:                               #condicional para validar a quarta resposta do entrevistado.
-                        print(colored("\nOpção inválida\n","yellow"))         #print para orientar o usuário a inserir uma opção válida.
+                    if q4 == 1:              #\
+                        R4 = "Sim"            #\
+                    elif q4 == 2:               # Condicionais para guardar as respostas na lista que posteriormente será enviada para um arquivo csv
+                        R4 = "Não"            #/
+                    elif q4 == 3:            #/
+                        R4 = "Não Sei"
+                    elif q4 >3:           #condicional para validar a primeira resposta do entrevistado.
+                        print(colored("\nOpção inválida\n","yellow"))        #print para orientar o usuário a inserir uma opção válida.
                 except:
                     print(colored("\nOpção inválida. Favor escolher uma opção conforme menu.\n","yellow"))        #print para orientar o usuário a inserir uma opção válida.
             
@@ -97,7 +121,7 @@ class questions:                # classe criada e denominada 'questions'.
 
             
 
-            listaQ.append([idade,gender,q1,q2,q3,q4,data,horario]) #criando uma sub lista com os dados do entrevistado para ser inserida na lista principal.
+            listaQ.append([idade,gender,R1,R2,R3,R4,data,horario]) #criando uma sub lista com os dados do entrevistado para ser inserida na lista principal.
             
             exit = 4
             while exit >=3:             #estrutura de repetição que irá coletar a informção se o usuário deseja entrevistar mais pessoas nesse momento ou não.
